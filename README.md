@@ -20,7 +20,7 @@ To use the application follow the link and be sure to enter the city/region you 
 
 Gif of live application (sample)
 
-![me](https://github.com/nxtera/Am-I-Busy/blob/main/assets/images/Am_I_Busy.gif)
+![me](https://github.com/nxtera/Am-I-Busy/blob/main/assets/images/Sunshine or Showers.gif)
  
    
 ## Credits

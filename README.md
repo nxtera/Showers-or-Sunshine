@@ -16,11 +16,11 @@ The absolute importance of reading the api documentation to ensure you are using
 
 To use the application follow the link and be sure to enter the city/region you want to find weather information on. You can also click on the previous searches to reload that particular weather information.  
 
-(https://nxtera.github.io/Am-I-Busy)
+(https://nxtera.github.io/Showers-or-Sunshine/y)
 
 Gif of live application (sample)
 
-![me](https://github.com/nxtera/Am-I-Busy/blob/main/assets/images/Sunshine or Showers.gif)
+![me](https://github.com/nxtera/Am-I-Busy/blob/main/assets/images/Sunshine_or_Showers.gif)
  
    
 ## Credits

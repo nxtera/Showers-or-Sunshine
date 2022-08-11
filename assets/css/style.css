@@ -20,6 +20,12 @@ header h1 {
     text-align: center;
 }
 
+
+
+#SearchCity {
+    display: inline-block;
+
+}
 p {
     font-size: 25px;
 }
@@ -117,3 +123,15 @@ body {
  .hidden {
     display: none;
 } 
+
+.green {
+    color: rgb(0, 204, 0) 
+}
+
+.red {
+    color: rgb(255, 0, 0)
+}
+
+.yellow {
+    color: rgb(255, 255, 51)
+}

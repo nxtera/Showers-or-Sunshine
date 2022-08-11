@@ -35,6 +35,7 @@ var cityList = document.getElementById("cityList")
 var searchButton = document.getElementById("searchButton");
 var cityName = document.getElementById("day1-cityName")
 
+
 /* Display current day*/
 var currentDate = moment().format("MMMM Do YYYY");
 $("#day1-date").text(currentDate);
@@ -99,10 +100,16 @@ function fivedayForecast(lat, lon) {
             for (i = 0; i < 6; i++) {
                 document.getElementById("icon" + (i + 1)).src = " https://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + ".png";
             }
-            document.getElementById("day1-uvIndex").innerHTML = "UV Index: " + data.daily[0].uvi;                   
-        
+                document.getElementById("day1-uvIndex").innerHTML = "UV Index: " + data.daily[0].uvi;
+                // /* change uvi text depending on number */
+                // var uvi = (data.daily[0].uvi);
+                // if (uvi > 0 && uvi < 3) {document.getElementById("day1-uvIndex").classList.add("green").classList.remove("yellow").classList.remove("red")};
+                // if (uvi> 3 && uvi < 7) {document.getElementById("day1-uvIndex").classList.add("yellow").classList.remove("green").classList.remove("red")};
+                // //else if {document.getElementById("day1-uvIndex").classList.add("red").classList.remove("green").classList.remove("yellow")};
+
         })
-        .catch(err => alert("Unexpected error. Please try again"))           
+        .catch(err => alert("Unexpected error. Please try again"))
+                   
 }
 
 

@@ -1,0 +1,119 @@
+:root {
+    --purple: rgba(212, 0, 255, 0.484);
+    --yellow: rgba(255, 247, 0, 0.603);
+    --lightBlue: 
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 15px 0px, 15px, 0px;
+    margin: 30px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+ul  {
+    list-style-type: none;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+ul:hover  {
+    cursor:pointer;
+}
+
+ul li:hover {
+
+    color:rgba(255, 247, 0, 0.603)
+}
+
+
+#inputContainer {
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgba(97, 95, 95, 0.829);    
+    border-radius: 5px;
+
+}
+#day1-cityName {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+body {
+    height: 120vh;
+    background-image: linear-gradient(to bottom right, var(--purple) , var(--yellow));
+}
+
+#currentWeather {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border: 5px solid  rgb(31, 82, 82);
+    width: 410px;
+    height: 285px;
+    margin: 18px auto;
+    line-height:0.9cm;
+}
+
+#futureWeather {
+    align-items: center;
+    display: flex; 
+    height: 380px;
+    width: 1400px;
+    border: 5px solid rgba(97, 95, 95, 0.829);    
+    border-radius: 10px;
+    align-items: center;
+    margin: 18px auto;
+    justify-content: center;
+    position: relative;
+}
+
+
+#futureWeather h2{
+    position: absolute;
+    top:0;
+    padding: 5px; 
+}
+
+.dayBlock {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    top: -350px;
+    left: 150px;
+    height: 280px;
+    width: 230px;    
+    border: 5px solid rgb(31, 82, 82);    
+    border-radius: 10px;
+    line-height:0.9cm;
+}
+
+.dayBlock p {
+    font-size: 22px;
+}
+
+ .hidden {
+    display: none;
+} 

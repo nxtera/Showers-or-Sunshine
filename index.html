@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <Header>
+        <h1>☔☀️Showers or Sunshine ☔☀️ ?</h1>
+    </Header>
+
+    <!--Search container with input field and button-->
+    <section id ="inputContainer">
+        <p id="SearchCity">City: 
+            <input type="text" id="cityInput">
+            <button id="searchButton">Search</button>
+            <h2>
+                <ul id="cityList"></ul>
+            </h2>
+        </section>
+
+<div id="wrapper" class="hidden"> 
+
+    <!--Current Weather Container-->
+         <div id="currentWeather">
+                <p class="date" id="day1-date">01/01/99</p>
+                <p class="cityName" id="day1-cityName">Paridise City</p>
+            <div class ="weatherForecast">
+                <img src="./assets/images/Icon_Placeholder.png" alt="Weather Icon"
+                    class="weatherIcon" id="icon1"></div>
+                <p class="temp" id="day1-Temp">temp...</p> 
+                <p class="humidity" id="day1-Humidity">humidity...</p>
+                <p class="windSpeed" id="day1-ws">wind speed...</p> 
+                <p class="uvIndex" id="day1-uvIndex">uv index...</p>
+            </div>
+
+    <!--5 Day Forecast Containe-->
+        <div id="futureWeather">
+        <h2>5 Day Forecast</h2>
+            <div class="dayBlock">
+                <p class ="date" id="day2">01/01/99</p>
+                <div class ="weatherForecast">
+                    <img src="./assets/images/Icon_Placeholder.png" alt="Weather Icon" 
+                        class="weatherIcon" id="icon2"></div>
+                <p class="temp" id="day2-Temp">temp...</p> 
+                <p class="humidity" id="day2-Humidity">humidity...</p>
+                <p class="windSpeed" id="day2-ws">wind speed...</p> 
+            </div>
+            <div class="dayBlock">
+                <p class ="date" id="day3">02/01/99</p>
+                <div class ="weatherForecast">
+                    <img src="./assets/images/Icon_Placeholder.png" 
+                    alt="Weather Icon" class="weatherIcon" id="icon3"></div>
+                <p class="temp" id="day3-Temp">Loading...</p> 
+                <p class="humidity" id="day3-Humidity">Loading...</p>
+                <p class="windSpeed" id="day3-ws">Loading...</p> 
+            </div>
+            <div class="dayBlock">
+                <p class ="date" id="day4">03/01/99</p>
+                <div class ="weatherForecast">
+                    <img src="./assets/images/Icon_Placeholder.png" alt="Weather Icon" 
+                        class="weatherIcon" id="icon4"></div>
+                <p class="temp" id="day4-Temp">Loading...</p> 
+                <p class="humidity" id="day4-Humidity">Loading...</p>
+                <p class="windSpeed" id="day4-ws">Loading...</p> 
+            </div>
+            <div class="dayBlock">
+                <p class ="date" id="day5">04/01/99</p>
+                <div class ="weatherForecast">
+                    <img src="./assets/images/Icon_Placeholder.png" alt="Weather Icon" 
+                        class="weatherIcon" id="icon5"></div>
+                <p class="temp" id="day5-Temp">Loading...</p> 
+                <p class="humidity" id="day5-Humidity">Loading...</p>
+                <p class="windSpeed" id="day5-ws">Loading...</p> 
+            </div>
+            <div class="dayBlock">
+                    <p class ="date" id="day6">05/01/99</p>
+                    <div class ="weatherForecast">
+                        <img src="./assets/images/Icon_Placeholder.png" alt="Weather Icon" 
+                            class="weatherIcon" id="icon6"></div>
+                    <p class="temp" id="day6-Temp">Loading...</p> 
+                    <p class="humidity" id="day6-Humidity">Loading...</p>
+                    <p class="windSpeed" id="day6-ws">Loading...</p> 
+            </div>
+        </div>
+</div>
+    <!--Link to JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link to moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--Link to custom js-->
+    <script src="./assets/js/main.js"></script>    
+</body>
+</html>

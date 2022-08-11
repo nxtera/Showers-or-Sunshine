@@ -20,7 +20,7 @@ To use the application follow the link and be sure to enter the city/region you 
 
 Gif of live application (sample)
 
-![me](https://github.com/nxtera/Showers-or-Sunshine/assets/images/Showers_or_Sunshine.gif)
+![me](https://github.com/nxtera/Showers-or-Sunshine/blob/master/assets/images/Showers_or_Sunshine.gif)
  
    
 ## Credits

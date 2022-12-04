@@ -135,3 +135,15 @@ body {
 .yellow {
     color: rgb(255, 255, 51)
 }
+
+.orange {
+
+    color: orange;
+}
+
+.uvIndex {
+    font-weight: 900;
+    background-color: rgba(44, 44, 44, 0.988);
+    width: 180px;
+    margin: 0 auto;
+}

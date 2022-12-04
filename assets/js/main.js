@@ -101,11 +101,15 @@ function fivedayForecast(lat, lon) {
                 document.getElementById("icon" + (i + 1)).src = " https://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + ".png";
             }
                 document.getElementById("day1-uvIndex").innerHTML = "UV Index: " + data.daily[0].uvi;
-                // /* change uvi text depending on number */
-                // var uvi = (data.daily[0].uvi);
-                // if (uvi > 0 && uvi < 3) {document.getElementById("day1-uvIndex").classList.add("green").classList.remove("yellow").classList.remove("red")};
-                // if (uvi> 3 && uvi < 7) {document.getElementById("day1-uvIndex").classList.add("yellow").classList.remove("green").classList.remove("red")};
-                // //else if {document.getElementById("day1-uvIndex").classList.add("red").classList.remove("green").classList.remove("yellow")};
+                /* change uvi text depending on number */
+                var uvi = (data.daily[0].uvi);
+                // var uvi = (9)
+                console.log(uvi)
+                if (uvi < 3) {document.getElementById("day1-uvIndex").classList.add("green")}
+                else if (uvi > 3 && uvi < 6) {document.getElementById("day1-uvIndex").classList.add("yellow")}
+                else if (uvi > 6 && uvi < 8) {document.getElementById("day1-uvIndex").classList.add("orange")}
+                else if (uvi > 8) {document.getElementById("day1-uvIndex").classList.add("red")};
+
 
         })
         .catch(err => alert("Unexpected error. Please try again"))
@@ -123,6 +127,10 @@ document.getElementById("day6").innerHTML = "" + (moment().add(5, 'days').format
 
 /*Display the rest of the app when user has entered a search*/
 function Display() {
-    document.getElementById("wrapper").classList.remove("hidden")
+    document.getElementById("wrapper").classList.remove("hidden");
+    document.getElementById("day1-uvIndex").classList.remove("yellow");
+    document.getElementById("day1-uvIndex").classList.remove("green");
+    document.getElementById("day1-uvIndex").classList.remove("orange");
+    document.getElementById("day1-uvIndex").classList.remove("red")
 }
 loadCities();
